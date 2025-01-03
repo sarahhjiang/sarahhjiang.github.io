@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="menu-wrap">
+        <nav class="menu">
+            <div class="icon-list">
+                <a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+                <a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+                <a href="projects.html"><i class="fa fa-fw fa-file-code-o"></i><span>Projects</span></a>
+                <a href="https://drive.google.com/file/d/1ToHOH_o0i_Rijhn0Wjf8y7dGutkbOF01/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-fw fa-file-text-o"></i><span>CV</span>
+                </a>                
+                <a href="music.html"><i class="fa fa-fw fa-music"></i><span>Music</span></a>
+                <a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+            </div>
+        </nav>
+    </div>
+    <button class="menu-button" id="open-button"><i class="fa fa-bars"></i></button>
+
+    <!-- Portfolio Section -->
+    <section class="swag text-center" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <h1 class="arrow">Recent <span>Projects</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Items -->
+    <div class="container">
+        <div class="row row-offset-0">
+            <div class="col-md-3 col-sm-6">
+                <div class="overlay-effect effects clearfix">
+                    <div class="img">
+                        <a href="img/portfolio/portfolio-01-large.jpg" data-lightbox="roadtrip" title="Project One - Lorem Ipsum">
+                            <img class="grayscale" src="img/portfolio/portfolio-01-thumbnail.jpg" alt="Portfolio Item">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuButton = document.getElementById("open-button");
+            const menuWrap = document.querySelector(".menu-wrap");
+
+            // Toggle menu visibility when the button is clicked
+            menuButton.addEventListener("click", () => {
+                document.body.classList.toggle("show-menu");
+            });
+        });
+    </script>
+  </body>
+</html>
