@@ -128,7 +128,9 @@ h3 {
 }
 h4 {
 	font-size:1em;
+	font-weight:bold;
 	margin:1.33em 0;
+	color: white;
 }
 h5 {
 	font-size:0.83em;
@@ -379,7 +381,7 @@ table {
 /* Menu */
 .menu-wrap {
 	z-index:999;
-	background: rgb(255, 255, 255);
+	background: white;
 	-webkit-transition:width 0.4s,height 0.4s,-webkit-transform 0.4s;
 	transition:width 0.4s,height 0.4s,transform 0.4s;
 	-webkit-transition-timing-function:cubic-bezier(0.7,0,0.3,1);
@@ -1303,3 +1305,31 @@ ul.slides li {
 	}
 }
 
+
+.skill-box i {
+	font-size: 40px;
+	color: #ffffff; /* Set icon color to white */
+	margin-bottom: 15px;
+  }
+  
+  .skill-box {
+	background-color: #0b0c61; /* Dark blue background for the skill box */
+	color: #ffffff; /* White text for the skill box */
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-box h4 {
+	color: #ffffff; /* Ensure skill titles are white */
+  }
+  
+  .skill-box p {
+	color: #e0e0e0; /* Light gray for descriptions */
+  }
+  
+  .skill-box:hover {
+	transform: scale(1.05); /* Slight zoom effect on hover */
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
