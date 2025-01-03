@@ -957,6 +957,14 @@ ul.social-buttons li:last-child {
 .social {
 	margin-top: 25px
 }
+#music {
+    background-color: #d6e7f6; /* Replace with your desired color */
+    padding: 90px 0px 10px; /* Adjust padding as needed */
+}
+#blog {
+    background-color: #ffffff; /* Replace with your desired color */
+    padding: 10px 0px 10px; /* Adjust padding as needed */
+}
 /* ==========================================================================Contact========================================================================== */
 .up-btn {
 	width:55px;
