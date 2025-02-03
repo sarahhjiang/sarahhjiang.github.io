@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demographic Imbalances - Sarah Jiang</title>
+    <!-- Bootstrap -->
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Theme Style -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="menu-wrap">
+        <nav class="menu">
+            <div class="icon-list">
+                <a href="../index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+                <a href="../index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+                <a href="../projects.html"><i class="fa fa-fw fa-file-code-o"></i><span>Projects</span></a>
+                <a href="https://drive.google.com/file/d/1ToHOH_o0i_Rijhn0Wjf8y7dGutkbOF01/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-fw fa-file-text-o"></i><span>CV</span>
+                </a>                
+                <a href="../music.html"><i class="fa fa-fw fa-music"></i><span>Music</span></a>
+                <a href="../index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+            </div>
+        </nav>
+    </div>
+    <button class="menu-button" id="open-button"><i class="fa fa-bars"></i></button>
+
+    <!-- Project Header -->
+    <section class="swag text-center" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <h1 class="arrow">Systematic Database Review <span>PhysioNet</span></h1>
+                <p>Understanding and quantifying demographic data reporting patterns in biomedical research
+                    <br> publicly available on PhysioNet, the world's largest repository of biosignal data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="text-center" id="project-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- Project Quick Info -->
+                    <div class="project-info">
+                        <p><strong>Timeline:</strong> March 2023 - July 2024</p>
+                        <p><strong>Role:</strong> Lead researcher & first author</p>
+                        <p><strong>Publication:</strong> <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(24)00170-5/fulltext">Lancet Digital Health</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <!-- Problem & Motivation -->
+            <div class="row content-section">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="arrow">Problem & Motivation</h2>
+                    <p>The PhysioNet Open Access Database is among the most extensive and utilized repositories of biosignal data worldwide, 
+                        with 181 datasets from studies spanning the last four decades. These datasets are crucial for training and validating 
+                        artificial intelligence/machine learning (AI/ML) algorithms designed to estimate and predict various health-related 
+                        outcomes. However, the lack of uniform demographic reporting across these studies introduces a significant risk of bias, 
+                        particularly affecting underrepresented and underserved populations. Heterogeneous reporting results in data that may 
+                        not accurately represent all demographic groups, thereby skewing AI predictions toward overrepresented populations and 
+                        exacerbating existing health disparities when these algorithms are deployed in real-world settings. Additionally, 
+                        algorithms trained on non-representative data cannot be generalized across real-world populations, and thus are limited 
+                        in their implementation in real-world healthcare settings. <br>
+                        Our study examines demographic reporting patterns within the PhysioNet Open Access Database to identify existing gaps 
+                        and their implications. Specifically, we seek to identify existing relationships between demographic data that is more 
+                        frequently reported, such as study participant age and sex, and demographic data that is frequently absent from biosignal 
+                        studies, such as race and ethnicity. Additionally, even studies that do include race and/or ethnicity data do not report 
+                        these data in a standardized manner, resulting in non-uniform reporting across the database. These analyses not only shed 
+                        light on the prevalence of non-standardized demographic reporting within biosignal datasets, but also set the stage for 
+                        evaluating the impact of such reporting on the accuracy and bias of AI/ML models in healthcare.
+                        </p>
+                </div>
+            </div>
+
+            <!-- Project Image/Demo -->
+            <div class="row content-section">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="portfolio-item">
+                        <a href="../img/bmesposter.pdf">
+                        <img src="../img/bmesposter.jpg" alt="Project Image" class="img-responsive"></a>
+                        <p class="image-caption">Poster presented at BMES Annual Meeting 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approach -->
+            <div class="row content-section">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="arrow">Approach</h2>
+                    <p>The PND contains 175 studies involving human subjects, as of July 2023. We conducted a systematic 
+                        analysis of these 175 biosignal datasets/databases to identify reporting patterns primarily regarding 
+                        four key demographic variables: race, ethnicity, sex, and age, as well as supplementary information 
+                        such as study size (N), date of publication, location, and biosignal type. Where detailed data, on the 
+                        level of individual participants, was available, this data was used to calculate our values. In the case
+                         of multiple sources of data being available (i.e. from a combination of the original publication, dataset, 
+                         or PhysioNet description), the PhysioNet description of the study was used. <br>
+                        Additionally, we conducted six pairwise Chi-square tests of independence on all permutations of two variables
+                         chosen from race, ethnicity, age, and sex to identify relationships in demographics reporting. The significance 
+                         level was set to 0.05, with a Bonferroni corrected alpha of 0.0083 for 6 pairwise comparisons. A linear 
+                         regression model was used to identify whether statistically significant relationships existed between 
+                         the number of demographic variables reported and the date of publication and data posted on PhysioNet; 
+                         however, due to substantial variation in demographics reporting between 2005-2020, these models yielded 
+                         minimally successful results. Figures are generated using Python 3.9.11, NumPy 1.25.1, pandas 2.0.3, and a 
+                         linear regression model was generated with scikit-learn 1.4.2. 
+                        </p>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="row content-section">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="arrow">Results & Impact</h2>
+                    <p>A small fraction (N=12, 6.9%) of the 175 studies involving human participants reported all four demographic variables,
+                         while 14.3% of studies (N=25) report no demographic information. Further, only 23 studies (13.1%) reported race and
+                          only 14 (8.0%) reported ethnicity, while 142 (81.1%) studies reported sex and 139 (79.2%) reported age. <br>
+                        Studies that reported at least two variables reported both age and sex, while no studies reporting ≤ 2 variables 
+                        reported race or ethnicity. Within studies that include ethnicity data, the only reported ethnicities are 
+                        latinx/non-latinx, or similar categories. We found reporting of age was not independent of reporting sex, and reporting 
+                        of ethnicity was not independent of reporting race, and vice-versa.  <br>
+                        Studies that report all four key demographic variables were conducted after 2015, with one exception, and primarily 
+                        involved critical care patients (emergency department admitted patients or intensive care unit patients). The studies 
+                        without demographic information were primarily conducted prior to 2015 (N=18). Linear regression models indicate no 
+                        statistically significant relationships between year and number of variables reported by studies, as demographic reporting 
+                        varies greatly after ~2005. <br>
+                        Our analysis of the PND highlights significant demographic reporting gaps that risk embedding biases into AI/ML algorithms. 
+                        To counteract these, there is an urgent need for the research community to lead in establishing and enforcing standards 
+                        for comprehensive demographic reporting. By enhancing data collection protocols to ensure the representation of diverse 
+                        populations, we can develop more accurate and fair algorithms to estimate and predict health-outcomes. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project Navigation -->
+    <section class="swag text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="../projects.html" class="outline-btn">← Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Menu Scripts -->
+    <script src="../js/classie.js"></script>
+    
+    <!-- JavaScript for Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuButton = document.getElementById("open-button");
+            const menuWrap = document.querySelector(".menu-wrap");
+
+            // Toggle menu visibility when the button is clicked
+            menuButton.addEventListener("click", () => {
+                document.body.classList.toggle("show-menu");
+            });
+        });
+    </script>
+  </body>
+</html>

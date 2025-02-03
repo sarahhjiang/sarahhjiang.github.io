@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wearable Web App - Sarah Jiang</title>
+    <!-- Bootstrap -->
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Theme Style -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="menu-wrap">
+        <nav class="menu">
+            <div class="icon-list">
+                <a href="../index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+                <a href="../index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+                <a href="../projects.html"><i class="fa fa-fw fa-file-code-o"></i><span>Projects</span></a>
+                <a href="https://drive.google.com/file/d/1ToHOH_o0i_Rijhn0Wjf8y7dGutkbOF01/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-fw fa-file-text-o"></i><span>CV</span>
+                </a>                
+                <a href="../music.html"><i class="fa fa-fw fa-music"></i><span>Music</span></a>
+                <a href="../index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+            </div>
+        </nav>
+    </div>
+    <button class="menu-button" id="open-button"><i class="fa fa-bars"></i></button>
+
+    <!-- Project Header -->
+    <section class="swag text-center" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <h1 class="arrow">Full Stack Development <span>Wearable Data Collection Platform</span></h1>
+                <p>Building a full-stack web app interfacing with Fitbit, Garmin, and Apple HealthKit APIs allowing <br>
+                    researchers to seamlessly collect and analyze wearable data.</p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="text-center" id="project-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- Project Quick Info -->
+                    <div class="project-info">
+                        <p><strong>Timeline:</strong> May 2022 - May 2023</p>
+                        <p><strong>Role:</strong> Backend Developer</p>
+                        <p><strong>Tools:</strong> FastAPI, Django, PostgreSQL, Azure Data Studio</p>
+                        <p><strong>Posters:</strong> <a href="../img/dataplusposter.jpg"> Data+ Symposium (2022)</a>, <a href="../img/bassposter.jpg">Bass Connections Symposium (2023)</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <!-- Problem & Motivation -->
+            <div class="row content-section">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="arrow">Problem & Motivation</h2>
+                    <p>The increasing adoption of wearable devices in healthcare monitoring has created a unique opportunity 
+                    for gathering continuous health data at scale. However, researchers face significant barriers when 
+                    trying to utilize this data effectively. Commercial wearable platforms often keep their data in isolated 
+                    ecosystems, making it challenging and expensive to access the information needed for comprehensive health 
+                    studies. Our team identified the need for a unified platform that could bridge these gaps and enable 
+                    efficient health data collection across multiple device types.</p>
+                </div>
+            </div>
+
+            <!-- Project Image/Demo -->
+            <div class="row content-section">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="portfolio-item">
+                        <a href="../img/bassposter.jpg">
+                        <img src="../img/bassposter.jpg" alt="Project Image" class="img-responsive"></a>
+                        <p class="image-caption">Poster presented at Bass Connections Research Symposium, April 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approach -->
+            <div class="row content-section">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="arrow">Methods</h2>
+                    <p>To address these challenges, we developed an integrated data collection system that combines web and 
+                    mobile interfaces with secure cloud storage. At its core, the platform uses Django (initial) and FastAPI (final) for the web framework, 
+                    with user authentication and data management handled through Azure cloud services. We created custom 
+                    integrations with major wearable platforms, including Fitbit and Garmin APIs, while also developing a 
+                    specialized iOS application for Apple Watch data collection. The system employs OAuth protocols to ensure 
+                    secure data access and automated collection processes to maintain up-to-date health information.</p>
+                </div>
+            </div>
+
+            <!-- Results & Impact -->
+            <div class="row content-section">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="arrow">Results & Impact</h2>
+                    <p>Our platform successfully bridges the gap between commercial wearable devices and research needs by 
+                    providing a unified interface for data collection and analysis. The system's architecture allows researchers 
+                    to gather continuous health data while maintaining user privacy and data security. We've implemented features 
+                    that enable participant enrollment, automated data collection, and secure storage, creating a robust 
+                    foundation for various health monitoring studies.</p>
+            
+                    <p>Looking ahead, we're focusing on enhancing the platform's capabilities through improved user interfaces 
+                    and expanded API functionality. The system's modular design allows for easy integration of new data sources 
+                    and analysis tools, making it adaptable for different research needs. This flexibility positions the platform 
+                    as a valuable tool for future health monitoring studies, from early disease detection to long-term health 
+                    trend analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project Navigation -->
+    <section class="swag text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="../projects.html" class="outline-btn">← Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Menu Scripts -->
+    <script src="../js/classie.js"></script>
+    
+    <!-- JavaScript for Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuButton = document.getElementById("open-button");
+            const menuWrap = document.querySelector(".menu-wrap");
+
+            // Toggle menu visibility when the button is clicked
+            menuButton.addEventListener("click", () => {
+                document.body.classList.toggle("show-menu");
+            });
+        });
+    </script>
+  </body>
+</html>

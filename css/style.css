@@ -469,13 +469,12 @@ table {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-    .hero {
-        background-position: center top; /* Reposition image for smaller screens */
-        background-size: contain; /* Ensure the image scales properly */
-        min-height: 500px; /* Adjust minimum height for smaller devices */
-        max-height: 700px; /* Adjust maximum height for smaller screens */
-    }
+@media (max-width: 900px) {
+	.hero {
+		background-image: none; /* Remove the background image */
+		min-height: 400px; /* Adjust height since we don't need space for image */
+		padding: 20px 0;
+	}
 }
 
 header #hero .inner {
@@ -1333,3 +1332,146 @@ ul.slides li {
 	transform: scale(1.05); /* Slight zoom effect on hover */
 	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
   }
+
+
+  /* ==========================================================================
+   Project Page Styles
+   ========================================================================== */
+
+/* Project Header Section */
+.project-header {
+    background-color: #d6e7f6;
+    padding: 60px 0 40px;
+}
+
+.project-header h1.arrow span {
+    color: #0b0c61;
+}
+
+/* Project Details Section */
+.project-details {
+    background-color: #f3f5f8;
+    padding: 40px 0;
+}
+
+.project-info {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.project-info p {
+    color: #06273e;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Project Content Sections */
+.project-content {
+    padding: 50px 0;
+    background: white;
+}
+
+.content-section {
+    margin: 50px 0;
+    text-align: left;
+}
+
+.content-section h2.arrow {
+    color: #353535;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content-section h2.arrow::after {
+    margin: 20px 0;
+}
+
+.content-section p {
+    color: #06273e;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Project Images */
+.project-content .portfolio-item {
+    margin: 30px 0;
+}
+
+.project-content .portfolio-item img {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Project Navigation */
+.project-nav {
+    background-color: #0b0c61;
+    padding: 40px 0;
+}
+
+.project-nav .outline-btn {
+    color: #a587b1;
+    border-color: #a587b1;
+}
+
+.project-nav .outline-btn:hover {
+    background: #a587b1;
+    color: #0b0c61;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .project-header {
+        padding: 40px 0 30px;
+    }
+    
+    .project-info {
+        padding: 20px;
+    }
+    
+    .content-section {
+        margin: 30px 0;
+    }
+    
+    .content-section h2.arrow {
+        font-size: 20px;
+    }
+    
+    .project-content .portfolio-item img {
+        max-width: 100%;
+    }
+}
+
+/* Dark Theme Sections */
+.color-bg .project-info {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.color-bg .project-info p {
+    color: white;
+}
+
+.color-bg .content-section h2.arrow {
+    color: white;
+}
+
+.color-bg .content-section p {
+    color: white;
+}
