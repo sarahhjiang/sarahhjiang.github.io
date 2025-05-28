@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CLIPPro - Sarah Jiang</title>
+    <!-- Bootstrap -->
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Theme Style -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="menu-wrap">
+        <nav class="menu">
+            <div class="icon-list">
+                <a href="../index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+                <a href="../index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+                <a href="../projects.html"><i class="fa fa-fw fa-file-code-o"></i><span>Projects</span></a>
+                <a href="../static/Jiang-Sarah-CV.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-fw fa-file-text-o"></i><span>CV</span>
+                </a>                
+                <a href="../music.html"><i class="fa fa-fw fa-music"></i><span>Music</span></a>
+                <a href="../index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+            </div>
+        </nav>
+    </div>
+    <button class="menu-button" id="open-button"><i class="fa fa-bars"></i></button>
+
+    <!-- Project Header -->
+    <section class="swag text-center" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <h1 class="arrow">Classifier Guided <span>Protein Generation</span> </br> via Natural Language Input</h1>
+                <p>We developed FunctionFold, a novel approach for generating functional proteins
+                    using natural language input through a classifier-guided diffusion model. We investigated the
+                    impact of different natural language encoders (PubMedBERT and Mixedbread)
+                    on functional protein generation.</p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="text-center" id="project-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- Project Quick Info -->
+                    <div class="project-info">
+                        <p><strong>Co-Authors:</strong> Yeonseo Kim, Hyojoo Kim, Michaela Harris</p>
+                        <p><strong>Timeline:</strong> April 2025</p>
+                        <p><a href="../static/NL_slides.pdf"><strong>Presentation</strong></a> & <a href="../static/NLguided_prot.pdf"><strong>NEURIPS style manuscript</strong></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row content-section">
+        <div class="col-md-10 col-md-offset-1">
+            <h2 class="arrow">Problem & Motivation</h2>
+            <p>Protein engineering has emerged as a critical tool in biotechnology and drug development, yet current AI-driven approaches primarily focus on structural information or require highly specific technical inputs. While natural language remains the primary medium through which biological function is described, existing protein generation models fail to leverage the nuanced functional descriptions captured in free-form text. Our project addressed this gap by developing FunctionFold, a novel system that generates functional proteins directly from natural language prompts, investigating how different text encoding approaches impact the quality and biological relevance of generated sequences.</p>
+            
+            <p>By creating a classifier-guided diffusion system, we gained deep insights into the relationship between semantic text representations and protein sequence generation—from contrastive learning principles to the nuances of aligning cross-modal embeddings. This approach allowed us to understand how natural language descriptions can effectively guide protein design toward functionally relevant sequence spaces, while tackling practical challenges in multimodal representation learning and conditional generation.</p>
+        </div>
+     </div>
+     
+     <!-- Project Image/Demo -->
+    <div class="row content-section">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="portfolio-item">
+                <a href="../img/clippro.png">
+                    <img src="../img/clippro.png" alt="CLIPPro Architecture" class="img-responsive" style="max-width: 80%; height: auto; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;"></a>
+                <p class="image-caption">CLIPPro Structure</p> </br>
+                    <a href="../img/clippro_pipeline.png">
+                    <img src="../img/clippro_pipeline.png" alt="FunctionFold Architecture" class="img-responsive" style="max-width: 80%; height: auto; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;"></a>
+                <p class="image-caption">FunctionFold system architecture and generated protein structures, more details available in paper linked <a href="../static/NLguided_prot.pdf">here</a>.</p>
+            </div>
+        </div>
+    </div>
+     <!-- Approach -->
+     <div class="row content-section">
+        <div class="col-md-10 col-md-offset-1">
+            <h2 class="arrow">Technical Implementation</h2>
+            <p>Our architecture centers on CLIPPro, a custom protein-text alignment model that learns to score how well protein sequences match functional descriptions through contrastive learning. We embedded protein sequences using ESM-2 (650M parameters) and compared two biomedical text encoders: PubMedBERT, trained on biomedical literature, and Mixedbread, optimized for semantic representations. Each embedding passes through modality-specific MLPs projecting into a shared 1024-dimensional latent space, trained using symmetric InfoNCE loss with a learnable temperature parameter.</p>
+            
+            <p>The trained CLIPPro model then guides the Diffusion Protein Language Model (DPLM) during sequence generation, using cosine similarity scores to compute gradients that steer the diffusion process toward sequences semantically aligned with input prompts. Our system processes natural language descriptions like "binds single-stranded DNA during recombination" or "penetrates cell membranes to deliver molecular cargo," enabling intuitive control over protein generation through biologically meaningful text descriptions rather than technical parameters.</p>
+        </div>
+     </div>
+     
+     <!-- Results & Impact -->
+     <div class="row content-section">
+        <div class="col-md-10 col-md-offset-1">
+            <h2 class="arrow">Results & Validation</h2>
+            <p>We validated FunctionFold against unguided baselines and EvoDiff across structural and functional metrics using 465,770 protein sequences from SwissProt. Our classifier-guided approach achieved superior functional alignment with 0.2088 Levenshtein similarity compared to 0.2040 for unguided generation, while maintaining competitive structural quality (mean pLDDT of 73.90 vs. EvoDiff's 75.11). Critically, our system demonstrated 16% improvement in ProTrek functional prediction scores (2.30 vs. 1.98), indicating better alignment with intended biological functions.</p>
+     
+            <p>Ablation studies revealed that semantically meaningful guidance is essential—random text prompts ("apple banana airplane") significantly degraded performance across all metrics, highlighting that appropriate semantic alignment between text and protein representations is crucial for effective generation. Generated proteins exhibited diverse structural characteristics appropriate for their intended functions, from partially disordered algogenic proteins to multi-helical membrane-penetrating structures. While the current implementation focuses on shorter sequences and faces computational overhead during diffusion, these results demonstrate that natural language can effectively guide protein design toward functionally relevant sequence spaces, opening new avenues for democratizing protein engineering through intuitive text-based interfaces.</p>
+        </div>
+     </div>
+    
+    <!-- Next Project Navigation -->
+    <section class="swag text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="../projects.html" class="outline-btn">← Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Menu Scripts -->
+    <script src="../js/classie.js"></script>
+    
+    <!-- JavaScript for Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuButton = document.getElementById("open-button");
+            const menuWrap = document.querySelector(".menu-wrap");
+
+            // Toggle menu visibility when the button is clicked
+            menuButton.addEventListener("click", () => {
+                document.body.classList.toggle("show-menu");
+            });
+        });
+    </script>
+  </body>
+</html>

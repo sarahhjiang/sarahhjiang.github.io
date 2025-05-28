@@ -469,7 +469,7 @@ table {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
 	.hero {
 		background-image: none; /* Remove the background image */
 		min-height: 400px; /* Adjust height since we don't need space for image */
@@ -1246,11 +1246,7 @@ ul.slides li {
 	}
 }
 
-
-
-
-
-
+/* ==========================================================================Responsive fixes========================================================================== */
 
 /** Responsive fixes **/
 @media screen and (max-width:767px) {
@@ -1262,7 +1258,10 @@ ul.slides li {
 	.hero h3 {
 	    letter-spacing: 10px;
 	}
-
+	.hero p {
+	    text-align: center;
+	    margin-left: 0;
+	}
 
 	.hero {
 	    padding-bottom: 0;
@@ -1294,15 +1293,6 @@ ul.slides li {
 }
 
 
-@media screen and (max-width:991px) {
-	.hero {
-    	padding: 0px;
-	}
-
-	.subscribe {
-	    padding-bottom: 40px;
-	}
-}
 
 
 .skill-box i {
