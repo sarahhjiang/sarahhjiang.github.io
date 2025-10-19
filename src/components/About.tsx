@@ -28,7 +28,7 @@ const About = () => {
               I completed my BSE in Biomedical Engineering and Computer Science at Duke University,
               where I conducted research on wearable sensors for health monitoring and developed
               full-stack web applications for healthcare data management. Outside of research, 
-              you can find me learning pieces on the piano, exploring local coffee shops, or 
+              you can find me playing the piano, exploring local coffee shops, or 
               buried in a good book [currently reading: <em>Ariadne</em> by Jennifer Saint].
             </p>
 
@@ -40,7 +40,7 @@ const About = () => {
                 <div>
                   <p className="font-semibold text-foreground">Education</p>
                   <p className="text-sm text-muted-foreground">PhD Biostatistics, UNC</p>
-                  <p className="text-sm text-muted-foreground">BSE BME & CS, Duke University</p>
+                  <p className="text-sm text-muted-foreground">BSE BME & CS, Duke</p>
                 </div>
               </div>
 
