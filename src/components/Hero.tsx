@@ -39,12 +39,12 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-foreground/80 font-medium">
-            AI Researcher |   Biomedical Engineer  | Developer
+            AI Researcher |   Biomedical Engineer |
           </p>
 
           {/* Tagline */}
           <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
-            Working toward interpretable models and systems that connect biosignals, behavior, and health.
+            Working toward fair models and systems that connect biosignals, behavior, and health.
           </p>
 
           {/* CTA Buttons */}
