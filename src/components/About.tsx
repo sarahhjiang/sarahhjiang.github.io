@@ -18,8 +18,8 @@ const About = () => {
           <div className="gradient-card rounded-3xl p-8 md:p-12 shadow-soft">
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               Hi! I’m an <span className="font-semibold text-primary">NSF Graduate Research Fellow </span> 
-              and current PhD student passionate about using technological innovations to democratize healthcare. 
-              My research sits at the intersection of data, design, and ethics in digital health.
+              and current PhD student passionate about leveraging technological innovations to democratize healthcare. 
+              My research sits at the intersection of data, design, and ethics in digital health –
               I aim to develop ML solutions that are not only technically rigorous and scalable, 
               but also people-centered and clinically impactful.
             </p>
