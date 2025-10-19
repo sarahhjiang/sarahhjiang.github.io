@@ -26,7 +26,7 @@ const About = () => {
 
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               With a background in Biomedical Engineering and Computer Science from Duke, 
-              I bring a full-stack perspective to health data science, building end-to-end ML pipelines, 
+              I combine technical depth with translational focus, building end-to-end ML pipelines, 
               training large-scale foundation models, and integrating multimodal data across cloud and 
               high-performance computing systems.
             </p>
@@ -50,16 +50,6 @@ const About = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="p-3 rounded-xl bg-accent/10">
-                  <MapPin className="h-6 w-6 text-accent" />
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">Location</p>
-                  <p className="text-sm text-muted-foreground">Chapel Hill, NC</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
                 <div className="p-3 rounded-xl bg-secondary/10">
                   <Sparkles className="h-6 w-6 text-secondary" />
                 </div>
@@ -69,6 +59,17 @@ const About = () => {
                   <p className="text-sm text-muted-foreground">Disease Prediction</p>
                 </div>
               </div>
+
+              <div className="flex items-start gap-3">
+                <div className="p-3 rounded-xl bg-accent/10">
+                  <MapPin className="h-6 w-6 text-accent" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground">Location</p>
+                  <p className="text-sm text-muted-foreground">Chapel Hill, NC</p>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
