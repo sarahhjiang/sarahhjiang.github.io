@@ -39,7 +39,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-foreground/80 font-medium">
-            AI Researcher |   Biomedical Engineer |
+            AI Researcher |   Biomedical Engineer
           </p>
 
           {/* Tagline */}

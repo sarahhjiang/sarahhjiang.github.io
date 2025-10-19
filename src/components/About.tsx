@@ -18,23 +18,14 @@ const About = () => {
           <div className="gradient-card rounded-3xl p-8 md:p-12 shadow-soft">
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               I’m an <span className="font-semibold text-primary">NSF Graduate Research Fellow </span> 
-              and PhD student in Biostatistics at UNC Chapel Hill, developing interpretable and causal 
-              machine learning models that connect wearable biosignals, human behavior, and clinical outcomes. 
-              My work seeks to uncover the mechanisms linking physiology and health through transparent, 
-              mathematically grounded modeling and scalable technology.
-            </p>
-
-            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-              With a background in Biomedical Engineering and Computer Science from Duke, 
-              I combine technical depth with translational focus, building end-to-end ML pipelines, 
-              training large-scale foundation models, and integrating multimodal data across cloud and 
-              high-performance computing systems.
+              and PhD student in Biostatistics at UNC Chapel Hill, working toward 
+              technological innovations that connect wearable biosignals, human behavior, and clinical outcomes. 
             </p>
 
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               My research sits at the intersection of data, design, and ethics in digital health, 
               where I aim to develop ML solutions that are not only technically rigorous and scalable, 
-              but also interpretable, equitable, and clinically impactful.
+              but also people-centered and clinically impactful.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
@@ -69,7 +60,7 @@ const About = () => {
                   <p className="text-sm text-muted-foreground">Chapel Hill, NC</p>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
