@@ -44,7 +44,7 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
-            Working toward fair models and systems that connect biosignals, behavior, and health.
+            Working toward systems that connect biosignals, behavior, and health.
           </p>
 
           {/* CTA Buttons */}

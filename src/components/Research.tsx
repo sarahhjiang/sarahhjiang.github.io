@@ -69,7 +69,7 @@ const Research = () => {
             Research
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Engineering interpretable machine learning systems that transform biosignals into actionable health insights
+            Engineering ML systems that transform medical data into actionable health insights
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-blush mx-auto rounded-full mt-4" />
         </div>
