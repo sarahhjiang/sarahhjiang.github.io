@@ -17,14 +17,14 @@ const About = () => {
 
           <div className="gradient-card rounded-3xl p-8 md:p-12 shadow-soft">
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-              I’m an <span className="font-semibold text-primary">NSF Graduate Research Fellow </span> 
-              and PhD student in Biostatistics at UNC Chapel Hill, working toward 
-              technological innovations that connect wearable biosignals, human behavior, and clinical outcomes. 
+              Hi! I’m an <span className="font-semibold text-primary">NSF Graduate Research Fellow </span> 
+              and PhD student in Biostatistics at UNC Chapel Hill. I'm passionate about advancing 
+              technological innovations to connect wearable biosignals, human behavior, and clinical outcomes. 
             </p>
 
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-              My research sits at the intersection of data, design, and ethics in digital health, 
-              where I aim to develop ML solutions that are not only technically rigorous and scalable, 
+              My research sits at the intersection of data, design, and ethics in digital health.
+              I aim to develop ML solutions that are not only technically rigorous and scalable, 
               but also people-centered and clinically impactful.
             </p>
 

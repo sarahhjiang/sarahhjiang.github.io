@@ -67,7 +67,7 @@ const Contact = () => {
               Get in Touch!
             </h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Always happy to chat about research, projects, or potential collaborations in healthcare AI
+              Always happy to chat about research, projects, or anything related to healthcare AI :)
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-blush mx-auto rounded-full mt-4" />
           </div>

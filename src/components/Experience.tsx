@@ -41,10 +41,10 @@ const Experience = () => {
       color: "accent",
     },
     {
-      role: "Head UTA",
+      role: "TA",
       organization: "Duke CS & BME",
       period: "2022–2025",
-      description: "Project dev. and head TA for Intro to Data Science, UTA Egr Design & Comm, grader for Embedded Medical Software, MedTech Design",
+      description: "Project dev. and head undergraduate TA for Intro to Data Science, UTA Egr Design & Comm, grader for Embedded Medical Software, MedTech Design",
       color: "secondary",
     },
   ];
