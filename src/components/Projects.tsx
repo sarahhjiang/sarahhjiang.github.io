@@ -1,9 +1,23 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Database, Brain, Activity, Watch } from "lucide-react";
+import { Database, Brain, Microchip, Watch } from "lucide-react";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Classifier Guided Protein Generation",
+      description: "Developed a novel protein design framework using classifier-guided diffusion models to generate functional proteins from natural language descriptions.",
+      tech: ["PyTorch", "Hugging Face Transformers", "ESM-2", "PubMedBERT"],
+      icon: Brain,
+      gradient: "from-primary/10 to-secondary/10",
+    },
+    {
+      title: "Automated Blood Pressure Measurement System",
+      description: "Developed a complete automated blood pressure monitoring system integrating analog signal processing, microcontroller control, and custom filtering circuits to explore the fundamentals of oscillometric blood pressure measurement.",
+      tech: ["Arduino", "Circuit Design", "Signal Processing"],
+      icon: Microchip,
+      gradient: "from-primary/10 to-secondary/10",
+    },
     {
       title: "RecycleHealth Dashboard",
       description: "Full-stack web application for tracking and managing wearable device donations, enabling efficient management of non-profit resources and inventory.",
