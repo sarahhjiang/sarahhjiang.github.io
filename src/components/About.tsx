@@ -29,7 +29,7 @@ const About = () => {
               where I conducted research on wearable sensors for health monitoring and developed
               full-stack web applications for healthcare data management. Outside of research, 
               you can find me learning pieces on the piano, exploring local coffee shops, or 
-              buried in a good book [currently reading: Ariadne by Jennifer Saint].
+              buried in a good book [currently reading: <em>Ariadne</em> by Jennifer Saint].
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
