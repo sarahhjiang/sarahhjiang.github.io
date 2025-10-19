@@ -18,14 +18,18 @@ const About = () => {
           <div className="gradient-card rounded-3xl p-8 md:p-12 shadow-soft">
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               Hi! I’m an <span className="font-semibold text-primary">NSF Graduate Research Fellow </span> 
-              and PhD student in Biostatistics at UNC Chapel Hill. I'm passionate about advancing 
-              technological innovations to connect wearable biosignals, human behavior, and clinical outcomes. 
-            </p>
-
-            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+              and current PhD student passionate about using technological innovations to democratize healthcare. 
               My research sits at the intersection of data, design, and ethics in digital health.
               I aim to develop ML solutions that are not only technically rigorous and scalable, 
               but also people-centered and clinically impactful.
+            </p>
+
+            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+              I completed my BSE in Biomedical Engineering and Computer Science at Duke University,
+              where I conducted research on wearable sensors for health monitoring and developed
+              full-stack web applications for healthcare data management. Outside of research, 
+              you can find me learning pieces on the piano, exploring local coffee shops, or 
+              buried in a good book [currently reading: Ariadne by Jennifer Saint].
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
