@@ -37,14 +37,14 @@ const Experience = () => {
       role: "Full Stack Developer & Research Fellow",
       organization: "BIG IDEAs Lab, Duke University",
       period: "2022–2025",
-      description: "Led development of research platforms and conducted machine learning research on health equity in wearable technology.",
+      description: "Led development of research platforms and conducted machine learning research on health equity and disease detection in wearable technology.",
       color: "accent",
     },
     {
       role: "Teaching Assistant",
       organization: "Duke CS & BME",
       period: "2022–2025",
-      description: "Project dev. and head undergraduate TA for Intro to Data Science, UTA Egr Design & Comm, grader for Embedded Medical Software, MedTech Design",
+      description: "Project dev. and head undergraduate TA for Intro to Data Science, TA Egr Design & Comm, grader for Embedded Medical Software, MedTech Design",
       color: "secondary",
     },
   ];
