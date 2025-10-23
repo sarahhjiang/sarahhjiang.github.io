@@ -27,7 +27,7 @@ const About = () => {
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               I completed my BSE in Biomedical Engineering and Computer Science at Duke University,
               where I conducted research on wearable sensors for health monitoring and developed
-              full-stack web applications for healthcare data management. When I'm not working on a project, 
+              full-stack applications for healthcare data management. When I'm not working on a project, 
               you can find me playing the piano, exploring local coffee shops, or 
               buried in a good book [currently reading: <em>Ariadne</em> by Jennifer Saint].
             </p>
