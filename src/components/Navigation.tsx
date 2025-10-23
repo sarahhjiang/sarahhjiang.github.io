@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { File, Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,7 +42,13 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("#hero")}
-            className="text-xl font-semibold text-foreground hover:text-primary transition-smooth"
+            className={cn(
+              "text-xl font-semibold text-foreground transition-smooth hover:text-primary",
+              isScrolled
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-1 pointer-events-none",
+            )}
+            aria-hidden={!isScrolled}
           >
             Sarah Jiang
           </button>

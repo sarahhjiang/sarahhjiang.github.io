@@ -43,6 +43,12 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        lilac: "#B692F6",
+        orchid: "#D8B4FE",
+        periwinkle: "#A5B4FC",
+        sapphire: "#6366F1",
+        petal: "#F9A8D4",
+        bubblegum: "#F472B6",
         blush: {
           DEFAULT: "hsl(var(--blush))",
           foreground: "hsl(var(--blush-foreground))",

@@ -18,6 +18,30 @@ const contactColorStyles = {
     iconWrapper: "bg-blush/10",
     icon: "text-blush",
   },
+  lilac: {
+    iconWrapper: "bg-lilac/10",
+    icon: "text-lilac",
+  },
+  orchid: {
+    iconWrapper: "bg-orchid/10",
+    icon: "text-orchid",
+  },
+  periwinkle: {
+    iconWrapper: "bg-periwinkle/10",
+    icon: "text-periwinkle",
+  },
+  sapphire: {
+    iconWrapper: "bg-sapphire/10",
+    icon: "text-sapphire",
+  },
+  petal: {
+    iconWrapper: "bg-petal/10",
+    icon: "text-petal",
+  },
+  bubblegum: {
+    iconWrapper: "bg-bubblegum/10",
+    icon: "text-bubblegum",
+  },
 } as const;
 
 type ContactColorKey = keyof typeof contactColorStyles;
@@ -29,21 +53,21 @@ const Contact = () => {
       label: "Email",
       value: "sarah [dot] jiang [at] unc [dot] edu",
       href: "mailto:sarah.jiang@unc.edu",
-      color: "primary",
+      color: "bubblegum",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "let's connect!",
       href: "https://linkedin.com/in/sarahhjiang",
-      color: "accent",
+      color: "secondary",
     },
     {
       icon: Github,
       label: "GitHub",
       value: "check out my projects",
       href: "https://github.com/sarahhjiang",
-      color: "secondary",
+      color: "sapphire",
     },
     {
       icon: GraduationCap,

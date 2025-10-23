@@ -1,9 +1,92 @@
 import { ExternalLink, FileText } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
+
+type ResearchColor =
+  | "primary"
+  | "accent"
+  | "secondary"
+  | "lilac"
+  | "orchid"
+  | "periwinkle"
+  | "sapphire"
+  | "petal"
+  | "bubblegum";
+
+const researchStyles: Record<
+  ResearchColor,
+  { card: string; hoverTitle: string; badge: string; link: string }
+> = {
+  primary: {
+    card: "group-hover:border-primary/40 group-hover:shadow-[0_18px_45px_-20px_rgba(88,28,135,0.45)]",
+    hoverTitle: "group-hover:text-primary",
+    badge: "group-hover:border-primary/40 group-hover:text-primary",
+    link: "group-hover:text-primary hover:text-primary",
+  },
+  accent: {
+    card: "group-hover:border-accent/40 group-hover:shadow-[0_18px_45px_-20px_rgba(17,94,89,0.45)]",
+    hoverTitle: "group-hover:text-accent",
+    badge: "group-hover:border-accent/40 group-hover:text-accent",
+    link: "group-hover:text-accent hover:text-accent",
+  },
+  secondary: {
+    card: "group-hover:border-secondary/40 group-hover:shadow-[0_18px_45px_-20px_rgba(37,99,235,0.35)]",
+    hoverTitle: "group-hover:text-secondary",
+    badge: "group-hover:border-secondary/40 group-hover:text-secondary",
+    link: "group-hover:text-secondary hover:text-secondary",
+  },
+  lilac: {
+    card: "group-hover:border-lilac/40 group-hover:shadow-[0_18px_45px_-20px_rgba(182,146,246,0.45)]",
+    hoverTitle: "group-hover:text-lilac",
+    badge: "group-hover:border-lilac/40 group-hover:text-lilac",
+    link: "group-hover:text-lilac hover:text-lilac",
+  },
+  orchid: {
+    card: "group-hover:border-orchid/40 group-hover:shadow-[0_18px_45px_-20px_rgba(216,180,254,0.45)]",
+    hoverTitle: "group-hover:text-orchid",
+    badge: "group-hover:border-orchid/40 group-hover:text-orchid",
+    link: "group-hover:text-orchid hover:text-orchid",
+  },
+  periwinkle: {
+    card: "group-hover:border-periwinkle/40 group-hover:shadow-[0_18px_45px_-20px_rgba(165,180,252,0.45)]",
+    hoverTitle: "group-hover:text-periwinkle",
+    badge: "group-hover:border-periwinkle/40 group-hover:text-periwinkle",
+    link: "group-hover:text-periwinkle hover:text-periwinkle",
+  },
+  sapphire: {
+    card: "group-hover:border-sapphire/40 group-hover:shadow-[0_18px_45px_-20px_rgba(99,102,241,0.45)]",
+    hoverTitle: "group-hover:text-sapphire",
+    badge: "group-hover:border-sapphire/40 group-hover:text-sapphire",
+    link: "group-hover:text-sapphire hover:text-sapphire",
+  },
+  petal: {
+    card: "group-hover:border-petal/40 group-hover:shadow-[0_18px_45px_-20px_rgba(249,168,212,0.45)]",
+    hoverTitle: "group-hover:text-petal",
+    badge: "group-hover:border-petal/40 group-hover:text-petal",
+    link: "group-hover:text-petal hover:text-petal",
+  },
+  bubblegum: {
+    card: "group-hover:border-bubblegum/40 group-hover:shadow-[0_18px_45px_-20px_rgba(244,114,182,0.45)]",
+    hoverTitle: "group-hover:text-bubblegum",
+    badge: "group-hover:border-bubblegum/40 group-hover:text-bubblegum",
+    link: "group-hover:text-bubblegum hover:text-bubblegum",
+  },
+};
+
+type Publication = {
+  title: string;
+  journal: string;
+  year: string;
+  role: string;
+  status: string;
+  description: string;
+  link: string;
+  color: ResearchColor;
+};
 
 const Research = () => {
-  const publications = [
+  const publications: Publication[] = [
     {
       title: "Movement Foundation Models",
       journal: "in progress",
@@ -12,6 +95,7 @@ const Research = () => {
       status: "ongoing",
       description: "Developing large-scale, contrastive and autoregressive models on high-dimensional accelerometer data to pretrain general-purpose health foundation models.",
       link: "#",
+      color: "sapphire",
     },
     {
       title: "Demographic Representation in Biosignal Data",
@@ -21,6 +105,7 @@ const Research = () => {
       status: "Published",
       description: "Comprehensive analysis of demographic biases in wearable biosignal datasets and their implications for ML model fairness.",
       link: "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(24)00170-5/fulltext",
+      color: "petal",
     },
     {
       title: "Wearable Sensors & Cardiovascular Health/Functional Capacity",
@@ -30,6 +115,7 @@ const Research = () => {
       status: "Coming soon...",
       description: "Systematic review of SOTA wearable sensor technologies for cardiovascular health monitoring and functional capacity assessment against gold-standard clinical measures.",
       link: "#",
+      color: "periwinkle",
     },
     {
       title: "Causal Inference on Heart Disease Outcomes Using Wearable + EHR Data",
@@ -39,6 +125,7 @@ const Research = () => {
       status: "Completed",
       description: "Applying causal inference methods to understand relationships between commercially available wearable-derived features (AllOfUs), social determinants of health (SDOH), and cardiovascular outcomes.",
       link: "#",
+      color: "lilac",
     },
     {
       title: "Social Determinants of Opioid Use Disorder",
@@ -48,6 +135,7 @@ const Research = () => {
       status: "Coming soon...",
       description: "Understanding social determinants of health related to opioid use disorder (OUD) relapse. By identifying statistically significant determinants that influence relapse, we seek to inform the development of digital health technologies for supporting relapse prevention efforts. Poster presented at CERSI Summit 2024, full paper under review",
       link: "#",
+      color: "bubblegum",
     },
   ];
 
@@ -75,17 +163,33 @@ const Research = () => {
         </div>
 
         <div className="max-w-5xl mx-auto space-y-6">
-          {publications.map((pub, index) => (
+          {publications.map((pub, index) => {
+            const colorStyle = researchStyles[pub.color] ?? researchStyles.primary;
+            return (
             <Card
               key={index}
-              className="gradient-card border-border/50 shadow-soft hover:shadow-hover transition-smooth overflow-hidden group"
+              className={cn(
+                "gradient-card border-border/50 shadow-soft transition-smooth overflow-hidden group",
+                colorStyle.card,
+              )}
             >
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-2">
-                  <CardTitle className="text-xl md:text-2xl text-foreground group-hover:text-primary transition-smooth">
+                  <CardTitle
+                    className={cn(
+                      "text-xl md:text-2xl text-foreground transition-smooth",
+                      colorStyle.hoverTitle,
+                    )}
+                  >
                     {pub.title}
                   </CardTitle>
-                  <Badge className={`${getStatusClasses(pub.status)} border w-fit`}>
+                  <Badge
+                    className={cn(
+                      getStatusClasses(pub.status),
+                      "border w-fit transition-smooth",
+                      colorStyle.badge,
+                    )}
+                  >
                     {pub.status}
                   </Badge>
                 </div>
@@ -103,7 +207,10 @@ const Research = () => {
                       href={pub.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-smooth"
+                      className={cn(
+                        "inline-flex items-center gap-2 text-sm font-medium text-foreground/80 transition-smooth",
+                        colorStyle.link,
+                      )}
                     >
                       <FileText className="h-4 w-4" />
                       View Publication
@@ -113,7 +220,8 @@ const Research = () => {
                 </div>
               </CardContent>
             </Card>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
