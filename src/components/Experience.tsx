@@ -71,13 +71,13 @@ const Experience = () => {
     description: string;
     color: ExperienceColor;
   }> = [
-    // {
-    //   role: "Founding Engineer",
-    //   organization: "Mantis Biotech",
-    //   period: "2025–Present",
-    //   description: "Building next-gen biomedical infra.",
-    //   color: "primary",
-    // },
+    {
+      role: "ML Engineer",
+      organization: "Mantis Biotech",
+      period: "2025–Present",
+      description: "Building physiological ML pipelines and infra.",
+      color: "primary",
+    },
     {
       role: "Deep Learning Researcher",
       organization: "Health Intelligence Lab, UCLA",
