@@ -93,7 +93,7 @@ const Research = () => {
       year: "2025-present",
       role: "Researcher",
       status: "ongoing",
-      description: "Developing large-scale, contrastive and autoregressive models on high-dimensional accelerometer data to pretrain general-purpose health foundation models.",
+      description: "Developing large-scale, contrastive and autoregressive embeddings of high-dimensional accelerometer data to pretrain general-purpose health foundation models.",
       link: "#",
       color: "sapphire",
     },
