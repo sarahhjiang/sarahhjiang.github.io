@@ -1,19 +1,223 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <title>Sarah Jiang | AI for Health</title>
-    <meta name="description" content="Sarah Jiang - PhD Student in Biostatistics at UNC Chapel Hill. Building interpretable models at the intersection of machine learning, wearable data, and biomedical AI." />
-    <meta name="author" content="Sarah Jiang" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <meta name="author" content="Sarah Jiang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Sarah Jiang
+                </p>
+                <p>
+		Hi! I'm a Biomedical Engineering PhD student at <a href="https://pratt.duke.edu/academics/departments/bme/">Duke University</a>, where I work on developing digital health tools and deep learning methods to improve health outcomes and healthcare access in the <a href="https://dunn.pratt.duke.edu/">BIG IDEAs Lab</a>, advised by <a href="https://dunn.pratt.duke.edu/people-page/jessilyn-dunn/">Dr. Jessilyn Dunn</a>. I'm broadly interested in leveraging wearable devices and biosignals for remote monitoring and early detection and intervention of chronic illness. I'm fortunate to be funded by the <a href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship</a>.<br><br>
+		Previously, I completed my BSE in Biomedical Engineering and Computer Science at Duke University, where I conducted research on wearable sensor advancements and biosignal data demographics, and developed full-stack applications for healthcare data management. I also interned at UCLA where I was advised by <a href="https://web.cs.ucla.edu/~yuzhe/">Dr. Yuzhe Yang</a>. At UCLA, I evaluated various self-supervised learning objectives to build a general purpose motion foudation model and created a unified dataset of high resolution accelerometer data for activity and disease tasks. <br><br>
+    When I'm not working on a project, you can find me playing the piano, exploring local coffee shops, or buried in a good book [currently reading: <em>Katabasis</em> by RF Kuang].
+		<!-- I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>.
+		I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>. -->
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:sarah.jiang@duke.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="cv.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=bdLjE3YAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/sarahhjiang">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/sarahhjiang/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/SarahJiang.jpg" class="profile-photo-link">
+                  <img alt="profile photo" src="images/SarahJiang.jpg" class="profile-photo hoverZoomLink">
+                </a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  Interested in AI for multimodal biomedical data, with a focus on wearable sensing and clinical applications.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/comingsoon.jpg' width="160">
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <span class="papertitle">Inertia-1: An Open Exploration of Wearable Foundation Models</span>
+    <br>
+    <b>S. Jiang</b>, A. Anand, Z. Xu, Z. Shuai, C. Zhuang, S. Sankararaman, Y. Yang
+    <br>
+    <em>In prep. for NeurIPS</em>, May 2026
+    <br>
+    <!-- <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(24)00170-5/fulltext">Pre-print</a> -->
+    <p></p>
+    <p>
+		<!-- Benchmarking 6 self-supervised learning objectives for multimodal wearable biosignals (accelerometer, gyroscope, magnetometer) trained on 150M+ minutes of high-frequency data evaluated across 15 downstream datasets (spanning HAR, disease classification, gait analysis) and 6 axes of data configurations. -->
+		Benchmarking self-supervised learning objectives for multimodal wearable biosignals trained on high-frequency data, evaluated across 15 downstream datasets (spanning HAR, disease classification, gait analysis).
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/physionet.png' width="160">
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <span class="papertitle">Demographic reporting in biosignal datasets: a comprehensive analysis of the PhysioNet open access database</span>
+    <br>
+    <b>S. Jiang</b>, P. Ashar, M. Shandhi, J. Dunn
+    <br>
+    <em>The Lancet Digital Health</em>, Nov. 2024
+    <br>
+    <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(24)00170-5/fulltext">Full Text</a>
+    <p></p>
+    <p>
+		Comprehensive analysis of demographic reporting and biases in wearable biosignal datasets and their implications for ML model clinical deployment.
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/oud.jpg' width="160">
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <span class="papertitle">Determinants of Opioid Use Disorder Relapse from the Biopsychosocial Perspective: A Systematic Review</span>
+    <br>
+    L. Lederer, M. Liu, B. Chen, <b>S. Jiang</b>, S. Kim, D. MacKenzie, E. Ho, G. Guerreri, A. Roghani, J. Dunn
+    <br>
+    <em>CERSI Summit</em>, Jan. 2024
+    <br>
+    <!-- <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(24)00170-5/fulltext">Full Text</a> -->
+    <p></p>
+    <p>
+		By identifying statistically significant determinants that influence relapse, we seek to inform the development of digital health technologies for supporting relapse prevention efforts. Full paper under review.
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <img src='images/cpet.jpg' width="160">
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <span class="papertitle">Assessment of Cardiorespiratory Fitness and Functional Capacity: From Clinics to Real-World Settings</span>
+    <br>
+    M. M. H. Shandhi, H. Jeong, <b>S. Jiang</b>, P. Ashar, S. Kavirajuni, A. V. Kotla, M. Fudim, H. Pontzer, W. E. Kraus, J. Dunn
+    <br>
+    <em>Under Review</em>
+    <br>
+    <!-- <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(24)00170-5/fulltext">Full Text</a> -->
+    <p></p>
+    <p>
+		Systematic review of SOTA wearable sensor technologies for cardiovascular health monitoring and functional capacity assessment against gold-standard clinical measures.
+    </p>
+  </td>
+</tr>
+
+
+            <!-- <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #aaba9e;">
+								 <h2>Recorded Talks</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="https://www.youtube.com/watch?v=hFlF33JZbA0">Radiance Fields and the Future of Generative Media, 2025</a><br>				  
+                <a href="https://www.youtube.com/watch?v=h9vq_65eDas">View Dependent Podcast, 2024</a><br>
+                <a href="https://www.youtube.com/watch?v=4tDhYsFuEqo">Bay Area Robotics Symposium, 2023
+</a><br>
+                <a href="https://youtu.be/TvWkwDYtBP4?t=7604">EGSR Keynote, 2021</a><br>
+				<a href="https://www.youtube.com/watch?v=nRyOzHpcr4Q">TUM AI Lecture Series, 2020</a><br>
+				<a href="https://www.youtube.com/watch?v=HfJpQCBTqZs">Vision & Graphics Seminar at MIT, 2020</a>
+              </td>
+            </tr> -->
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #c6b89e;">
+								 <h2>Academic Service</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                Reviewer, <a href="https://hipoct.embs.org/2024/">IEEE EMBS Conference on Healthcare Innovation - Point-of-Care Technologies (HI-POCT) 2024</a>
+                <br>
+                <!-- <a href="https://cvpr.thecvf.com/Conferences/2025/Organizers">Lead Area Chair, CVPR 2025</a>
+                <br>
+                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
+                <br>
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+                <br>
+                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                <br>
+                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
+                <br>
+                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                <br>
+                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a> -->
+              </td>
+            </tr>
+						
+						
+           
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #edd892;">
+								 <h2>Teaching</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <!-- Graduate Teaching Assistant (BME Data Science) – <a href="https://sites.duke.edu/bme790_390_fall2026/">BME 790/390 Fall 2026</a>, </br> -->
+                Head Undergraduate Teaching Assistant (Intro to Data Science) – 
+                <a href="https://sites.duke.edu/compsci216sp2023/">CS216 Spring 2023</a>, 
+                <a href="https://sites.duke.edu/compsci216fa2023/"> Fall 2023</a>, 
+                <a href="https://sites.duke.edu/compsci216sp2024/"> Spring 2024</a>, 
+                <a href="https://sites.duke.edu/compsci216fa2024/"> Fall 2024</a>, 
+                <a href="https://sites.duke.edu/compsci216sp2025/"> Spring 2025</a>
+                <br>
+                Undergraduate Teaching Assistant (Engineering Design & Technical Communication) – <a href="https://fyd.duke.edu/courses/engineering-design-technical-communication">EGR 101 Fall 2022</a>
+              </td>
+            </tr>
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Template & code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
