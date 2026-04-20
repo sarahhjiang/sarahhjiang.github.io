@@ -173,6 +173,6 @@ span.highlight {
   display: block;
   width: 100%;
   height: auto;
-  transform: scale(1.3);
-  transform-origin: 40% 40%;
+  transform: scale(3);
+  transform-origin: 53% 45%;
 }
