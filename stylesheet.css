@@ -84,6 +84,10 @@ a {
   font-size: 15px;
 }
 
+a {
+  font-size: inherit;
+}
+
 strong {
   font-family: 'Montserrat', Verdana, Helvetica, sans-serif;
   font-size: 15px;
