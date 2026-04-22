@@ -187,11 +187,11 @@ span.highlight {
   }
 
   .profile-photo-cell {
-    display: none;
+    display: none !important;
   }
 
   .profile-photo-mobile-wrapper {
-    display: block;
+    display: block !important;
     margin: 12px auto 16px;
     width: 100%;
     max-width: 220px;
