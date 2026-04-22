@@ -169,10 +169,31 @@ span.highlight {
   overflow: hidden;
 }
 
+.profile-photo-mobile-wrapper {
+  display: none;
+}
+
 .profile-photo {
   display: block;
   width: 100%;
   height: auto;
   transform: scale(3);
   transform-origin: 53% 45%;
+}
+
+@media (max-width: 760px) {
+  .profile-text-cell {
+    width: 100% !important;
+  }
+
+  .profile-photo-cell {
+    display: none;
+  }
+
+  .profile-photo-mobile-wrapper {
+    display: block;
+    margin: 12px auto 16px;
+    width: 100%;
+    max-width: 220px;
+  }
 }
