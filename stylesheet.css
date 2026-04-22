@@ -196,4 +196,31 @@ span.highlight {
     width: 100%;
     max-width: 220px;
   }
+
+  .stack-on-mobile {
+    border-collapse: collapse !important;
+  }
+
+  .stack-on-mobile tr {
+    display: block;
+  }
+
+  .stack-on-mobile td {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .stack-on-mobile td:first-child {
+    text-align: center;
+    padding-bottom: 0 !important;
+  }
+
+  .stack-on-mobile td:last-child {
+    padding-top: 12px !important;
+  }
+
+  .stack-on-mobile .one {
+    margin: 0 auto;
+  }
 }
