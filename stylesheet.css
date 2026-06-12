@@ -173,12 +173,19 @@ span.highlight {
   display: none;
 }
 
-.profile-photo {
+/* .profile-photo {
   display: block;
   width: 100%;
   height: auto;
   transform: scale(3);
   transform-origin: 53% 45%;
+} */
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.25);
+  transform-origin: 53% 55%;
 }
 
 @media (max-width: 760px) {
