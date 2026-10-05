@@ -107,8 +107,8 @@ body > table {
 body::before {
   opacity: 1;
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='250' viewBox='0 0 280 250'%3E%3Cpath d='M10.0 2.0L12.0 7.3L17.6 7.5L13.2 11.0L14.7 16.5L10.0 13.4L5.3 16.5L6.8 11.0L2.4 7.5L8.0 7.3Z' fill='white' stroke='%23c9b3ee' stroke-opacity='0.35' stroke-width='.8'/%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='320' viewBox='0 0 360 320'%3E%3Cpath d='M8.0 2.0L9.5 6.0L13.7 6.1L10.4 8.8L11.5 12.9L8.0 10.5L4.5 12.9L5.6 8.8L2.3 6.1L6.5 6.0Z' fill='white' stroke='%23c9b3ee' stroke-opacity='0.3' stroke-width='.8'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='250' viewBox='0 0 280 250'%3E%3Cpath d='M10.0 2.0L12.0 7.3L17.6 7.5L13.2 11.0L14.7 16.5L10.0 13.4L5.3 16.5L6.8 11.0L2.4 7.5L8.0 7.3Z' fill='white' stroke='%23c9b3ee' stroke-opacity='0.55' stroke-width='.8'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='320' viewBox='0 0 360 320'%3E%3Cpath d='M8.0 2.0L9.5 6.0L13.7 6.1L10.4 8.8L11.5 12.9L8.0 10.5L4.5 12.9L5.6 8.8L2.3 6.1L6.5 6.0Z' fill='white' stroke='%23c9b3ee' stroke-opacity='0.5' stroke-width='.8'/%3E%3C/svg%3E");
   background-size: 280px 250px, 360px 320px;
   background-position: 12px 19px, 150px 130px;
   animation: star-drift 24s linear infinite;
@@ -117,7 +117,7 @@ body::before {
 body::after {
   opacity: .18;
   background: radial-gradient(ellipse at 12% 22%, #f7d9ef 0, transparent 34%),
-              radial-gradient(ellipse at 88% 60%, #d9eaff 0, transparent 37%);
+              radial-gradient(ellipse at 88% 60%, #d9eaff 0, transparent 44%);
 }
 
 @keyframes star-drift {
